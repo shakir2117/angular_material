@@ -7,8 +7,7 @@ import { NavComponent } from './nav/nav.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { MatDialogComponent } from './mat-dialog/mat-dialog.component';
-
-
+import { UserctrlModule } from '../userctrl/userctrl.module';
 
 
 
@@ -20,13 +19,14 @@ import { MatDialogComponent } from './mat-dialog/mat-dialog.component';
     HomeComponent,
     FooterComponent,
     NavComponent,
-    MatDialogComponent
+    MatDialogComponent,
   ],
   imports: [
     AppRoutingModule,
     CommonModule,
     RouterModule,
-    MaterialModule
+    MaterialModule,
+    UserctrlModule
   ],
   exports:[
   ]

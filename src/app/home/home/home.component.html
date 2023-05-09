@@ -1,28 +1,93 @@
-<h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a numquam, similique quos sit perferendis ullam,
-    perspiciatis nobis necessitatibus est recusandae mollitia vitae deserunt quibusdam aliquam odit enim? Rem eos vel
-    laboriosam dignissimos veniam similique nisi, facilis quia assumenda quam illum esse sit. Pariatur cum possimus
-    maxime magni corporis perspiciatis sapiente voluptatibus laudantium, ex, voluptates quasi sit quisquam voluptatum.
-    Quia consequuntur rerum, eligendi nihil, ullam tempora consequatur ab corporis voluptas dolorum perferendis modi
-    aliquam repellat expedita eaque veniam quisquam quaerat et? Minus laborum adipisci atque suscipit natus numquam
-    officia in necessitatibus saepe? Eius dolores commodi distinctio molestias ipsum saepe quia voluptatibus vitae
-    voluptatem tenetur mollitia, maiores, nemo rem sapiente exercitationem minus consequatur facilis. Dolor, iste
-    maiores eos quasi tempore dolorum beatae praesentium blanditiis explicabo omnis officia quis sapiente repellendus
-    <br>
-<div class="btn">
-    <mat-spinner *ngIf="showSpinner" diameter="20"></mat-spinner>
-    <button color='warn' mat-raised-button (click)="openDialog()" matBadge="3">Choose Courses</button>
-</div>    <br>
-    laboriosam, incidunt nobis dolore repudiandae exercitationem saepe non tenetur ullam distinctio reiciendis fugit!
-    Nostrum, reiciendis minus. Modi pariatur nesciunt, aliquam placeat omnis error illo alias magnam quam corrupti,
-    laboriosam eveniet at, cumque ipsum. Necessitatibus amet accusamus delectus minus alias, doloribus placeat error
-    omnis debitis, nesciunt, possimus eum. Nostrum veniam, eligendi nihil voluptatem nesciunt asperiores consequatur
-    vero modi, totam doloremque, ducimus ipsam repudiandae tenetur magni animi tempore libero ratione esse error quasi
-    ab labore. Aspernatur cupiditate adipisci velit officia distinctio quo aut possimus tempora magni vel, soluta amet
-    saepe nostrum quod repellendus alias porro nemo libero aperiam fugiat expedita eligendi omnis. Tenetur perferendis
-    animi, soluta molestias assumenda quia iusto. Quia in libero ipsum doloribus atque amet omnis totam non nihil
-    aliquid, harum autem repellat odit reiciendis esse earum ducimus dignissimos praesentium alias delectus. Sequi culpa
-    minima, provident qui porro accusamus ab nulla eos ipsam, tempora perspiciatis quasi ducimus quia odit amet
-    accusantium. Ipsum veniam culpa quod libero dolorem vel ut adipisci modi molestiae unde quis quibusdam, obcaecati,
-    provident itaque. Corporis, at deleniti.
-</h1>
-    
+<div class="banner_page">
+    <div class="banner">
+        <div class="banner_text">
+            <p class="banner_title">Learn without limits</p>
+            <mat-divider></mat-divider>
+            <p class="banner_dis">Start, switch, or advance your career with more than 5,800 courses, Professional
+                Certificates, and degrees from world-class universities and companies.</p>
+        </div>
+        <div class="banner_img">
+            <img
+                src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+        </div>
+    </div>
+    <div class="btn">
+        <button color='warn' mat-raised-button (click)="openDialog()" matBadge="3">Choose Courses<mat-spinner
+                *ngIf="showSpinner" diameter="20"></mat-spinner></button>
+    </div>
+</div>
+<mat-accordion>
+    <div class="courses">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Angular Complete Course
+                </mat-panel-title>
+                <mat-panel-description>
+                    Total Duration: 250 hours
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>What is the Angular course?
+                Angular is a platform and framework for building single-page client applications using HTML and
+                TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of
+                TypeScript libraries that you import into your applications.</p>
+            <mat-action-row>
+                <button mat-button>Enroll</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+    </div>
+    <div class="courses">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    React Complete Course
+                </mat-panel-title>
+                <mat-panel-description>
+                    Total Duration: 300 hours
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Is React good for jobs?
+                The ability of ReactJS to create excellent web pages and web applications with minimal coding and time
+                has made it the most favoured framework among developers. Having substantial knowledge of the ReactJS
+                framework is one of the most favoured skills for React developer jobs</p>
+            <mat-action-row>
+                <button mat-button>Enroll</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+    </div>
+    <div class="courses">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Nodejs Complete Course
+                </mat-panel-title>
+                <mat-panel-description>
+                    Total Duration: 200 hours
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Can I learn Node JS in 3 months?
+                It takes around 3 months to fully learn Node JS and be able to build a functional full-stack
+                application. If you already know some other programming, you can get the basics down within a few week's
+                time. This is because there are so many moving parts that go into building a working app such as a
+                social network.28-Jan-2020</p>
+            <mat-action-row>
+                <button mat-button>Enroll</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+    </div>
+</mat-accordion>
+<div class="partners">
+    <div class="partner_title">
+        Our Beloved Partners
+    </div>
+    <div class="partner_img">
+        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/77hmeEJo3ZPlURCU02fD52/aa37b7f7b52285ba350acac62d8af5c1/illinois-3.png?auto=format%2Ccompress&dpr=1&w=&h=32"
+            alt="">
+        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XkOucZz6pMLV5DPvXCgCL/1777129a58b0a62b237bd28e9956afe8/duke-3.png?auto=format%2Ccompress&dpr=1&w=&h=32"
+            alt="">
+        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1c6RjBHi3Lqb9QpWxje7iA/b529f909c5230af3210ba2d47d149620/google.png?auto=format%2Ccompress&dpr=1&w=&h=37"
+            alt="">
+        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3toC4I7jbWxiedfxiyNjtT/735faeaf976a9692f425f8c3a7d125dc/1000px-IBM_logo.svg.png?auto=format%2Ccompress&dpr=1&w=&h=32"
+            alt="">
+    </div>
+</div>

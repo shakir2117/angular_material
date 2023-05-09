@@ -6,11 +6,34 @@ a{
   margin: 5px;
 }
 .sidenav {
-  width: 10%;
+  width: 8%;
+}
+.sidenav a{
+  width: 90%;
 }
 
 .sidenav .mat-toolbar {
   background: inherit;
+}
+.nav{
+  justify-content: space-between;
+}
+
+.search{
+  display: flex;
+  transform: scale(0.8);
+}
+.search input{
+  border-radius: 25px;
+  text-align: center;
+}
+
+
+.search_width {
+  width: 100%;
+}
+span{
+  padding-right: 1rem;
 }
 
 .mat-toolbar.mat-primary {

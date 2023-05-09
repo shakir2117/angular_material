@@ -1,0 +1,26 @@
+<div class="dialog">
+    <h1 mat-dialog-title>login</h1>
+    <div mat-dialog-content>
+        Enter Registered Email and Password
+    </div>
+    <form [formGroup]="loginform" novalidate (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput formControlName="Email" placeholder="Ex. pat@example.com">
+        <mat-error *ngIf="loginform.controls['Email'].hasError('required')">
+            Email is <strong>required</strong>
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput formControlName="password" >
+        <mat-error *ngIf="loginform.controls['password'].hasError('required')">
+            password is <strong>required</strong>
+        </mat-error>
+    </mat-form-field>
+    </form>
+    <div mat-dialog-actions>
+        <button mat-button mat-dialog-close>No</button>
+        <button mat-button mat-dialog-close cdkFocusInitial>Login</button>
+    </div>
+</div>

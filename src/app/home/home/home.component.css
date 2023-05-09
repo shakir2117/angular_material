@@ -1,3 +1,71 @@
-.btn{
-    text-align: center;
+.btn {
+    display: inline-block;
+    margin: 0em 40em;
+    width: 12rem;
+}
+
+.btn mat-spinner {
+    margin: 0em 5em;
+}
+
+.banner_img {
+    width: 40%;
+    height: 70%;
+}
+
+.banner_img img {
+    border-radius: 50%;
+    padding: 5%;
+    padding-bottom: 1%;
+    padding-top: 5%;
+    height: 60%;
+}
+
+.banner_text {
+    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    width: 60%;
+    height: 60%;
+}
+
+.banner_title {
+    color: #1f1f1f;
+    font-size: 5.25rem;
+    line-height: 5.75rem;
+    font-weight: 600;
+}
+
+.banner_dis {
+    color: #1f1f1f;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 400;
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+}
+
+.banner_page {
+    background-color: antiquewhite;
+    height: 90vh;
+}
+.partners{
+    background-color: cornsilk;
+    width: 100%;
+}
+
+.partner_img img {
+    justify-content: space-between;
+    padding: 2em 9em;
+}
+
+.partner_title {
+    padding: 1em 19em;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

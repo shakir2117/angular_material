@@ -8,12 +8,17 @@ import { MaterialModule } from './material/material.module';
 import { UserctrlModule } from './userctrl/userctrl.module';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { CourseModule } from './course/course.module';
+import { NavComponent } from './home/nav/nav.component';
+import { AboutModule } from './about/about.module';
+import { ContactModule } from './contact/contact.module';
+
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +28,10 @@ import { MatFormFieldModule } from "@angular/material/form-field";
     BrowserAnimationsModule,
     HomeModule,
     MaterialModule,
-    UserctrlModule
+    UserctrlModule,
+    CourseModule,
+    AboutModule,
+    ContactModule
   ],
   exports:[
   ],

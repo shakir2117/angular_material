@@ -1,0 +1,14 @@
+.course-card {
+    width: 400px;
+    height: 500px;
+    display: inline-flex;
+    margin-right: 0%;
+    margin: 5em;
+  }
+  .img_card{
+    height: 15rem;
+    width: 25rem;
+  }
+.image {
+    background-size: cover;
+  }

@@ -1,0 +1,39 @@
+.abt_title {
+    font-size: 4rem;
+    color: #3200ff;
+    padding: 4rem;
+    font-weight: 500;
+    line-height: 4rem;
+    letter-spacing: 4px;
+}
+
+.abt_banner {
+    background-image: url('https://images.pexels.com/photos/7692891/pexels-photo-7692891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn{
+    margin: 0rem 46rem;
+    width: max-content;
+}
+.abt{
+    display: flex;
+    height: 50%;
+}
+.abt_text{
+    font-size: 2rem;
+    width: 50%;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 3em;
+    background-color: white;
+    margin: 0px;
+}
+.abt_img{
+    background-color: white;
+    width: 50%;
+}
+.innerimage{
+    height:100%;
+    padding-inline-start:10em ;
+}

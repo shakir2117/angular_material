@@ -14,6 +14,7 @@ import { UserctrlModule } from '../userctrl/userctrl.module';
 
 
 
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -26,9 +27,10 @@ import { UserctrlModule } from '../userctrl/userctrl.module';
     CommonModule,
     RouterModule,
     MaterialModule,
-    UserctrlModule
-  ],
+    UserctrlModule,  ],
   exports:[
+    NavComponent,
+    FooterComponent,
   ]
 })
 export class HomeModule { }

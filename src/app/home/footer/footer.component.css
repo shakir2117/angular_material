@@ -1,8 +1,22 @@
+Copy
+
 .footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
+  background-color: #1976d2;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
 
 .footer-text {
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    width: 200%;
+    font-size: 14px;
+  }
 }

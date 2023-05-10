@@ -28,16 +28,20 @@ a{
   text-align: center;
 }
 
-
 .search_width {
   width: 100%;
 }
 span{
-  padding-right: 1rem;
+  padding-right: 10px;
 }
-
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+.nav a{
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 200%;
+    height: 25%;
+    font-size: 14px;
+  }
 }

@@ -1,0 +1,17 @@
+
+  .cnt_title {
+    text-align: center;
+    height: 7rem;
+    font-weight: bold;
+    font-size: 10vh;
+    padding-top: 50px;
+  }
+  .cnt{
+    background-color: beige;
+  }
+  
+  .cnt_form {
+    padding:1rem 44rem;
+    height: 80vh;
+  }
+  

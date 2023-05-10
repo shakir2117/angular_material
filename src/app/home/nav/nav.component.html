@@ -1,44 +1,19 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item routerLink=""><mat-icon style="padding-right: 10px;">home</mat-icon>HOME</a>
-      <a mat-list-item [matMenuTriggerFor]="appmenu"><mat-icon style="padding-right: 10px;" matBadge="3"
-          matBadgeSize="small">book</mat-icon>COURSES</a>
-      <a mat-list-item routerLink=""><mat-icon style="padding-right: 10px;">contact_support</mat-icon>CONTACT</a>
-      <a mat-list-item routerLink=""><mat-icon style="padding-right: 10px;">business</mat-icon>ABOUT</a>
-      <mat-menu #appmenu="matMenu">
-        <button mat-menu-item>Angular</button>
-        <button mat-menu-item>React</button>
-        <button mat-menu-item>Nodejs</button>
-      </mat-menu>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary" class="navbar">
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <div>NTTS</div>
-      <div class="nav">
-        <span>
-          <div class="search">
-            <input placeholder="Search Courses">
-          <button mat-icon-button color="warn" (click)='isalert("")'><mat-icon>search</mat-icon></button>
-          </div>
-        </span>
-        <span>   
-        </span>
-        
-        <span><button mat-button (click)="register()">Register</button></span>
-        <span><button mat-raised-button (click)="login()">Login</button></span>
+<mat-toolbar color="primary" class="navbar">
+  <a style="font-size: 2rem;" router-link="/">KWIK LEARN</a>
+  <div class="nav">
+    <span> <a routerLink="/"><mat-icon>home</mat-icon>Home</a></span>
+    <span> <a routerLink="/courses"><mat-icon matBadge="5" matBadgeSize="small" matBadgeColor="warn">book</mat-icon>Courses</a></span>
+    <span><a routerLink="/contact"><mat-icon>contact_support</mat-icon>Contact</a></span>
+    <span><a routerLink="/about"><mat-icon>business</mat-icon>About Us</a></span>
+    <span>
+      <div class="search">
+        <input placeholder="Search Courses">
+        <button mat-icon-button color="warn" (click)='isalert("")'><mat-icon>search</mat-icon></button>
       </div>
-    </mat-toolbar>
-    <!-- home page here -->
-    <app-home></app-home>
-    <app-footer></app-footer>
-    <!-- page ends -->
-  </mat-sidenav-content>
-</mat-sidenav-container>
+    </span>
+    <span> <button mat-button (click)="register()">Register</button>
+    </span>
+    <span><button mat-raised-button (click)="login()">Login</button>
+    </span>
+  </div>
+</mat-toolbar>

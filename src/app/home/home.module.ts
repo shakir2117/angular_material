@@ -8,6 +8,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { MatDialogComponent } from './mat-dialog/mat-dialog.component';
 import { UserctrlModule } from '../userctrl/userctrl.module';
+import { DataTableComponent } from './data-table/data-table.component';
 
 
 
@@ -21,6 +22,7 @@ import { UserctrlModule } from '../userctrl/userctrl.module';
     FooterComponent,
     NavComponent,
     MatDialogComponent,
+    DataTableComponent,
   ],
   imports: [
     AppRoutingModule,

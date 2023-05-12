@@ -19,6 +19,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from "@angular/material/form-field";
+import {MatTableModule} from '@angular/material/table';
+
 
 
 
@@ -48,6 +50,7 @@ const MaterialComponents=[
   MatRadioModule,
   MatCardModule,
   ReactiveFormsModule,
+  MatTableModule
 ]
 
 @NgModule({

@@ -12,6 +12,7 @@ import { CourseModule } from './course/course.module';
 import { NavComponent } from './home/nav/nav.component';
 import { AboutModule } from './about/about.module';
 import { ContactModule } from './contact/contact.module';
+import { EllipsesPipe } from './ellipses.pipe';
 
 
 

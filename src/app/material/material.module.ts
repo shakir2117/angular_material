@@ -20,6 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import {MatTableModule} from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 
@@ -50,7 +52,10 @@ const MaterialComponents=[
   MatRadioModule,
   MatCardModule,
   ReactiveFormsModule,
-  MatTableModule
+  MatTableModule,
+  MatSortModule,
+  MatPaginatorModule,
+  
 ]
 
 @NgModule({

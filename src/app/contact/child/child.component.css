@@ -1,0 +1,18 @@
+.child{
+    margin:0em 30em ;
+    width: 40%;
+    text-align: center;
+    background-color:greenyellow;
+    border: 1em;
+    border-radius: 20px;
+    display: block;
+}
+.msg{
+    margin:0em 40em ;
+    width: 40%;
+    text-align: center;
+    border-radius: 25px;
+}
+.ch{
+width: 100%;
+}

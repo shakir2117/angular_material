@@ -4,12 +4,14 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from '../home/home/home.component';
 import { HomeModule } from '../home/home.module';
 import { MaterialModule } from '../material/material.module';
+import { ChildComponent } from './child/child.component';
 
 
 
 @NgModule({
   declarations: [
-    ContactComponent
+    ContactComponent,
+    ChildComponent
   ],
   imports: [
     CommonModule,

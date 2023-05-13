@@ -9,6 +9,9 @@
   .cnt{
     background-color: beige;
   }
+  .child{
+    background-color: greenyellow;
+  }
   
   .cnt_form {
     padding:1rem 44rem;

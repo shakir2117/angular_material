@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+
+
   contactForm= this.fb.group({
     name: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
@@ -18,11 +20,11 @@ export class ContactComponent {
   constructor(private fb: FormBuilder) {
     
   }
-
-
+  data:string=''
 
   onSubmit() {
-
+    this.data=JSON.stringify(this.contactForm.value)
+    this.contactForm.reset();
   }
 
 }

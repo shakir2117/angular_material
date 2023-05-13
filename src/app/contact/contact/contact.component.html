@@ -3,6 +3,7 @@
     <div class="cnt_title">
         Contact Us
     </div>
+    <app-child [item]="data"></app-child>
     <div class="cnt_form">
         <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <mat-form-field appearance="outline">
